@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Avalia Restaurante</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container barra">
+            <a class="logo" href="../home/index.html">Avalia Restaurante</a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../home/index.html">Home</a>
+                <a href="../destaques/index.html">Destaques</a>
+                <a href="../feedback/index.html">Avaliar</a>
+                <a href="../login/index.html">Login</a>
+                <a class="ativo" href="../cadastro/index.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="container">
+            <h1>Cadastro</h1>
+            <p>Crie uma conta para participar das avaliações quando a lógica em JavaScript for construída.</p>
+
+            <form class="formulario">
+                <label>
+                    Nome
+                    <input type="text" name="nome" placeholder="Digite seu nome">
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="email" name="email" placeholder="seuemail@exemplo.com">
+                </label>
+
+                <label>
+                    Senha
+                    <input type="password" name="senha" placeholder="Crie uma senha">
+                </label>
+
+                <label>
+                    Perfil
+                    <select name="perfil">
+                        <option value="">Escolha uma opção</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="restaurante">Restaurante</option>
+                    </select>
+                </label>
+
+                <button type="button">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">Página de cadastro visual, ainda sem JavaScript.</div>
+    </footer>
+</body>
+</html>

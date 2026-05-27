@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques - Avalia Restaurante</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container barra">
+            <a class="logo" href="../home/index.html">Avalia Restaurante</a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../home/index.html">Home</a>
+                <a class="ativo" href="../destaques/index.html">Destaques</a>
+                <a href="../feedback/index.html">Avaliar</a>
+                <a href="../login/index.html">Login</a>
+                <a href="../cadastro/index.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="container">
+            <h1>Catalogo de restaurantes</h1>
+            <p>Use os campos abaixo como base visual para filtrar restaurantes por valor, tipo de comida e funcionamento.</p>
+
+            <section class="painel-filtros" aria-labelledby="titulo-filtros">
+                <div>
+                    <h2 id="titulo-filtros">Filtros</h2>
+                    <p>Controles prontos para receber a logica em JavaScript.</p>
+                </div>
+
+                <form class="filtros-form">
+                    <label>
+                        Valor medio
+                        <select name="valor" id="filtro-valor">
+                            <option value="">Todos os valores</option>
+                            <option value="ate-30">Ate R$ 30</option>
+                            <option value="31-50">R$ 31 a R$ 50</option>
+                            <option value="51-80">R$ 51 a R$ 80</option>
+                            <option value="acima-80">Acima de R$ 80</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Tipo
+                        <select name="tipo" id="filtro-tipo">
+                            <option value="">Todos os tipos</option>
+                            <option value="pizzaria">Pizzaria</option>
+                            <option value="hamburgueria">Hamburgueria</option>
+                            <option value="a-la-carte">A la carte</option>
+                            <option value="brasileira">Comida brasileira</option>
+                            <option value="vegetariana">Vegetariana</option>
+                        </select>
+                    </label>
+
+                    <fieldset>
+                        <legend>Funcionamento</legend>
+                        <label class="opcao-linha">
+                            <input type="radio" name="status" value="" checked>
+                            Todos
+                        </label>
+                        <label class="opcao-linha">
+                            <input type="radio" name="status" value="aberto">
+                            Aberto
+                        </label>
+                        <label class="opcao-linha">
+                            <input type="radio" name="status" value="fechado">
+                            Fechado
+                        </label>
+                    </fieldset>
+
+                    <button type="button" id="botao-filtrar">Filtrar</button>
+                </form>
+            </section>
+
+            <div class="catalogo">
+                <article class="restaurante" data-valor="35" data-tipo="brasileira" data-status="aberto">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Ambiente interno de restaurante">
+                    <div class="restaurante-info">
+                        <div class="titulo-card">
+                            <h2>Sabor da Casa</h2>
+                            <span class="status aberto">Aberto</span>
+                        </div>
+                        <p>Comida brasileira caseira, pratos bem servidos e sobremesas tradicionais.</p>
+                        <div class="tags">
+                            <span class="tag">R$ 35 medio</span>
+                            <span class="tag">11h as 15h</span>
+                            <span class="tag">Comida brasileira</span>
+                            <span class="tag">Nota 4.8</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="restaurante" data-valor="48" data-tipo="pizzaria" data-status="fechado">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Restaurante com mesas arrumadas">
+                    <div class="restaurante-info">
+                        <div class="titulo-card">
+                            <h2>Cantina da Nonna</h2>
+                            <span class="status fechado">Fechado</span>
+                        </div>
+                        <p>Massas artesanais, molhos frescos e pizzas feitas no forno a lenha.</p>
+                        <div class="tags">
+                            <span class="tag">R$ 48 medio</span>
+                            <span class="tag">18h as 23h</span>
+                            <span class="tag">Pizzaria</span>
+                            <span class="tag">Nota 4.6</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="restaurante" data-valor="42" data-tipo="vegetariana" data-status="aberto">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=900&q=80" alt="Pratos variados sobre a mesa">
+                    <div class="restaurante-info">
+                        <div class="titulo-card">
+                            <h2>Verde & Grill</h2>
+                            <span class="status aberto">Aberto</span>
+                        </div>
+                        <p>Saladas, grelhados, opcoes vegetarianas e sucos naturais.</p>
+                        <div class="tags">
+                            <span class="tag">R$ 42 medio</span>
+                            <span class="tag">10h as 22h</span>
+                            <span class="tag">Vegetariana</span>
+                            <span class="tag">Nota 4.7</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="restaurante" data-valor="28" data-tipo="hamburgueria" data-status="aberto">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Hamburguer servido com batatas">
+                    <div class="restaurante-info">
+                        <div class="titulo-card">
+                            <h2>Brasa Burger</h2>
+                            <span class="status aberto">Aberto</span>
+                        </div>
+                        <p>Hamburgueres artesanais, combos rapidos e molhos da casa.</p>
+                        <div class="tags">
+                            <span class="tag">R$ 28 medio</span>
+                            <span class="tag">17h as 00h</span>
+                            <span class="tag">Hamburgueria</span>
+                            <span class="tag">Nota 4.5</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="restaurante" data-valor="72" data-tipo="a-la-carte" data-status="fechado">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Prato sofisticado em mesa de restaurante">
+                    <div class="restaurante-info">
+                        <div class="titulo-card">
+                            <h2>Bistro Central</h2>
+                            <span class="status fechado">Fechado</span>
+                        </div>
+                        <p>Menu a la carte com carnes, massas, risotos e sobremesas autorais.</p>
+                        <div class="tags">
+                            <span class="tag">R$ 72 medio</span>
+                            <span class="tag">19h as 23h</span>
+                            <span class="tag">A la carte</span>
+                            <span class="tag">Nota 4.9</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">Restaurantes ficticios para fins de estudo.</div>
+    </footer>
+
+    <script src="../scripts/destaques.js"></script>
+    <script src="../scripts/localStorage.js"></script>
+</body>
+</html>

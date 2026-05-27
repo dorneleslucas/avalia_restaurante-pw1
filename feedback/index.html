@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar - Avalia Restaurante</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container barra">
+            <a class="logo" href="../home/index.html">Avalia Restaurante</a>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../home/index.html">Home</a>
+                <a href="../destaques/index.html">Destaques</a>
+                <a class="ativo" href="../feedback/index.html">Avaliar</a>
+                <a href="../login/index.html">Login</a>
+                <a href="../cadastro/index.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="container">
+            <h1>Avaliacao de restaurante</h1>
+            <p>Pagina visual para registrar feedback sobre atendimento, custo, qualidade da comida e experiencia geral.</p>
+
+            <section class="layout-avaliacao">
+                <form class="formulario formulario-avaliacao">
+                    <label>
+                        Restaurante
+                        <select name="restaurante" id="avaliacao-restaurante">
+                            <option value="">Escolha o restaurante</option>
+                            <option value="sabor-da-casa">Sabor da Casa</option>
+                            <option value="cantina-da-nonna">Cantina da Nonna</option>
+                            <option value="verde-grill">Verde & Grill</option>
+                            <option value="brasa-burger">Brasa Burger</option>
+                            <option value="bistro-central">Bistro Central</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Nome do cliente
+                        <input type="text" name="cliente" id="avaliacao-cliente" placeholder="Digite seu nome">
+                    </label>
+
+                    <div class="grade-notas">
+                        <label>
+                            Feedback geral
+                            <select name="feedback" id="avaliacao-feedback">
+                                <option value="">Escolha uma nota</option>
+                                <option value="5">5 - Excelente</option>
+                                <option value="4">4 - Bom</option>
+                                <option value="3">3 - Regular</option>
+                                <option value="2">2 - Ruim</option>
+                                <option value="1">1 - Muito ruim</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Atendimento
+                            <select name="atendimento" id="avaliacao-atendimento">
+                                <option value="">Escolha uma nota</option>
+                                <option value="5">5 - Excelente</option>
+                                <option value="4">4 - Bom</option>
+                                <option value="3">3 - Regular</option>
+                                <option value="2">2 - Ruim</option>
+                                <option value="1">1 - Muito ruim</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Custo
+                            <select name="custo" id="avaliacao-custo">
+                                <option value="">Escolha uma nota</option>
+                                <option value="5">5 - Otimo custo-beneficio</option>
+                                <option value="4">4 - Bom</option>
+                                <option value="3">3 - Aceitavel</option>
+                                <option value="2">2 - Caro</option>
+                                <option value="1">1 - Muito caro</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Qualidade da comida
+                            <select name="qualidade" id="avaliacao-qualidade">
+                                <option value="">Escolha uma nota</option>
+                                <option value="5">5 - Excelente</option>
+                                <option value="4">4 - Boa</option>
+                                <option value="3">3 - Regular</option>
+                                <option value="2">2 - Ruim</option>
+                                <option value="1">1 - Muito ruim</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label>
+                        Comentario
+                        <textarea name="comentario" id="avaliacao-comentario" placeholder="Conte como foi sua experiencia"></textarea>
+                    </label>
+
+                    <button type="button" id="botao-salvar-avaliacao">Salvar avaliacao</button>
+                </form>
+
+                <aside class="resumo-avaliacao">
+                    <h2>Campos para a logica</h2>
+                    <p>Os ids do formulario ja estao definidos para facilitar a captura pelo DOM e o salvamento com localStorage.</p>
+                    <ul>
+                        <li>Restaurante escolhido</li>
+                        <li>Notas por categoria</li>
+                        <li>Comentario do cliente</li>
+                        <li>Botao de salvar avaliacao</li>
+                    </ul>
+                </aside>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">Pagina de feedback visual, ainda sem JavaScript.</div>
+    </footer>
+
+    <script src="../scripts/feedback.js"></script>
+    <script src="../scripts/localStorage.js"></script>
+</body>
+</html>
