@@ -3,8 +3,8 @@ const form=document.querySelector('.formulario');
 form.addEventListener('submit',(event)=>{
 event.preventDefault();
 const data=new FormData(form);
-let email=data.get('email').trim();
-let senha=data.get('senha').trim();
+const email=data.get('email').trim();
+const senha=data.get('senha').trim();
 
 if(email===''||senha===''){
     alert('Preencha todos os campos');
