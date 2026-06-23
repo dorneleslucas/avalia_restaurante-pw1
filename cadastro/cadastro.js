@@ -18,4 +18,19 @@ let usuarios=[];
 if(usuariosSalvos!==null){
     usuarios=JSON.parse(usuariosSalvos);
 }
-})
+const emailExiste=usuarios.some((user)=>user.email===email);
+if(emailExiste){
+    alert('Este email ja esta cadastrado.')
+    return;
+}
+const novoUsuario={
+    nome:nome,
+    email:email,
+    senha:senha,
+    perfil:perfil
+};
+usuarios.push(novoUsuario);
+localStorage.setItem('usuarios',JSON.stringify(usuarios));
+alert('Cadastro realizado com sucesso!');
+window.location.href='../login/index.html'
+});
