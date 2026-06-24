@@ -2,6 +2,7 @@ const form=document.querySelector('.formulario');
 
 form.addEventListener('submit',(event)=>{
 event.preventDefault();
+console.log('Evento submit disparado');
 const data=new FormData(form);
 const email=data.get('email').trim();
 const senha=data.get('senha').trim();
