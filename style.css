@@ -493,3 +493,45 @@ button:hover,
 .acoes-card .btn-fotos::before {
     content: "📸 ";
 }
+
+/* ========== MODAL (para destaques) ========== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.modal-overlay.aberto {
+    display: flex;
+}
+.modal-card {
+    background: #fff;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 30px 24px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.modal-fechar {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.2s;
+}
+.modal-fechar:hover {
+    color: #b04f2e;
+}

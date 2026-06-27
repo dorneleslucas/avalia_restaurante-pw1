@@ -133,12 +133,18 @@ document.querySelectorAll('.btn-comentarios').forEach(function(btn) {
         }
         // Nome do restaurante sem hífen (usando if/else para evitar replace)
         let nomeExibicao = '';
-        if (id === 'sabor-da-casa') nomeExibicao = 'Sabor da Casa';
-        else if (id === 'cantina-da-nonna') nomeExibicao = 'Cantina da Nonna';
-        else if (id === 'verde-grill') nomeExibicao = 'Verde & Grill';
-        else if (id === 'brasa-burger') nomeExibicao = 'Brasa Burger';
-        else if (id === 'bistro-central') nomeExibicao = 'Bistro Central';
-        else nomeExibicao = id;
+        if (id === 'sabor-da-casa')
+             nomeExibicao = 'Sabor da Casa';
+        else if 
+        (id === 'cantina-da-nonna') nomeExibicao = 'Cantina da Nonna';
+        else if 
+        (id === 'verde-grill') nomeExibicao = 'Verde & Grill';
+        else if 
+        (id === 'brasa-burger') nomeExibicao = 'Brasa Burger';
+        else if 
+        (id === 'bistro-central') nomeExibicao = 'Bistro Central';
+        else 
+        nomeExibicao = id;
 
         let html = '<h3>Comentários sobre ' + nomeExibicao + '</h3>';
         if (filtrados.length === 0) {
