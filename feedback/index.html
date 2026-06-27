@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliar - Avalia Restaurante</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="container barra">
@@ -23,7 +25,8 @@
     <main class="conteudo">
         <div class="container">
             <h1>Avaliacao de restaurante</h1>
-            <p>Pagina visual para registrar feedback sobre atendimento, custo, qualidade da comida e experiencia geral.</p>
+            <p>Pagina visual para registrar feedback sobre atendimento, custo, qualidade da comida e experiencia geral.
+            </p>
 
             <section class="layout-avaliacao">
                 <form class="formulario formulario-avaliacao">
@@ -96,31 +99,32 @@
 
                     <label>
                         Comentario
-                        <textarea name="comentario" id="avaliacao-comentario" placeholder="Conte como foi sua experiencia"></textarea>
+                        <textarea name="comentario" id="avaliacao-comentario"
+                            placeholder="Conte como foi sua experiencia"></textarea>
                     </label>
 
                     <button type="button" id="botao-salvar-avaliacao">Salvar avaliacao</button>
+                    <button type="reset" id="botao-limpar">Limpar campos</button>
+
                 </form>
 
-                <aside class="resumo-avaliacao">
-                    <h2>Campos para a logica</h2>
-                    <p>Os ids do formulario ja estao definidos para facilitar a captura pelo DOM e o salvamento com localStorage.</p>
-                    <ul>
-                        <li>Restaurante escolhido</li>
-                        <li>Notas por categoria</li>
-                        <li>Comentario do cliente</li>
-                        <li>Botao de salvar avaliacao</li>
-                    </ul>
+                <aside class="resumo-avaliacao" id="area-comentarios">
+                    <h2>Comentários dos clientes</h2>
+                    <div id="lista-comentarios">
+                        <!-- Os comentários serão inseridos via JavaScript -->
+                        <p style="color:#777;">Nenhum comentário ainda. Seja o primeiro!</p>
+                    </div>
                 </aside>
             </section>
         </div>
     </main>
 
     <footer class="rodape">
-        <div class="container">Pagina de feedback visual, ainda sem JavaScript.</div>
+        <div class="container">Pagina de feedback visual.</div>
     </footer>
 
     <script src="../scripts/feedback.js"></script>
     <script src="../scripts/localStorage.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destaques - Avalia Restaurante</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="/scripts/destaques.js" defer></script>
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="container barra">
@@ -23,7 +26,8 @@
     <main class="conteudo">
         <div class="container">
             <h1>Catalogo de restaurantes</h1>
-            <p>Use os campos abaixo como base visual para filtrar restaurantes por valor, tipo de comida e funcionamento.</p>
+            <p>Use os campos abaixo como base visual para filtrar restaurantes por valor, tipo de comida e
+                funcionamento.</p>
 
             <section class="painel-filtros" aria-labelledby="titulo-filtros">
                 <div>
@@ -76,8 +80,9 @@
             </section>
 
             <div class="catalogo">
-                <article class="restaurante" data-valor="35" data-tipo="brasileira" data-status="aberto">
-                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Ambiente interno de restaurante">
+                <article class="restaurante" data-valor="35" data-tipo="brasileira" data-status="aberto" data-id="sabor-da-casa">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80"
+                        alt="Ambiente interno de restaurante">
                     <div class="restaurante-info">
                         <div class="titulo-card">
                             <h2>Sabor da Casa</h2>
@@ -90,11 +95,17 @@
                             <span class="tag">Comida brasileira</span>
                             <span class="tag">Nota 4.8</span>
                         </div>
+                        <div class="acoes-card">
+                            <button class="btn-comentarios" data-restaurante="sabor-da-casa">Ver comentários</button>
+                            <button class="btn-detalhes" data-restaurante="sabor-da-casa">Detalhes do prato</button>
+                            <a href="../fotos.html" class="btn-fotos">Ver fotos</a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="restaurante" data-valor="48" data-tipo="pizzaria" data-status="fechado">
-                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Restaurante com mesas arrumadas">
+                <article class="restaurante" data-valor="48" data-tipo="pizzaria" data-status="fechado" data-id="cantina-da-nonna"> 
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+                        alt="Restaurante com mesas arrumadas">
                     <div class="restaurante-info">
                         <div class="titulo-card">
                             <h2>Cantina da Nonna</h2>
@@ -107,11 +118,17 @@
                             <span class="tag">Pizzaria</span>
                             <span class="tag">Nota 4.6</span>
                         </div>
+                        <div class="acoes-card">
+                            <button class="btn-comentarios" data-restaurante="cantina-da-nonna">Ver comentários</button>
+                            <button class="btn-detalhes" data-restaurante="cantina-da-nonna">Detalhes do prato</button>
+                            <a href="../fotos.html" class="btn-fotos">Ver fotos</a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="restaurante" data-valor="42" data-tipo="vegetariana" data-status="aberto">
-                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=900&q=80" alt="Pratos variados sobre a mesa">
+                <article class="restaurante" data-valor="42" data-tipo="vegetariana" data-status="aberto" data-id="verde-gril">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=900&q=80"
+                        alt="Pratos variados sobre a mesa">
                     <div class="restaurante-info">
                         <div class="titulo-card">
                             <h2>Verde & Grill</h2>
@@ -124,11 +141,17 @@
                             <span class="tag">Vegetariana</span>
                             <span class="tag">Nota 4.7</span>
                         </div>
+                        <div class="acoes-card">
+                            <button class="btn-comentarios" data-restaurante="verde-gril">Ver comentários</button>
+                            <button class="btn-detalhes" data-restaurante="verde-gril">Detalhes do prato</button>
+                            <a href="../fotos.html" class="btn-fotos">Ver fotos</a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="restaurante" data-valor="28" data-tipo="hamburgueria" data-status="aberto">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Hamburguer servido com batatas">
+                <article class="restaurante" data-valor="28" data-tipo="hamburgueria" data-status="aberto" data-id="brasa-burger">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+                        alt="Hamburguer servido com batatas">
                     <div class="restaurante-info">
                         <div class="titulo-card">
                             <h2>Brasa Burger</h2>
@@ -141,11 +164,17 @@
                             <span class="tag">Hamburgueria</span>
                             <span class="tag">Nota 4.5</span>
                         </div>
+                        <div class="acoes-card">
+                            <button class="btn-comentarios" data-restaurante="brasa-burger">Ver comentários</button>
+                            <button class="btn-detalhes" data-restaurante="brasa-burger">Detalhes do prato</button>
+                            <a href="../fotos.html" class="btn-fotos">Ver fotos</a>
+                        </div>
                     </div>
                 </article>
 
-                <article class="restaurante" data-valor="72" data-tipo="a-la-carte" data-status="fechado">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Prato sofisticado em mesa de restaurante">
+                <article class="restaurante" data-valor="72" data-tipo="a-la-carte" data-status="fechado" data-id="bistro-central">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80"
+                        alt="Prato sofisticado em mesa de restaurante">
                     <div class="restaurante-info">
                         <div class="titulo-card">
                             <h2>Bistro Central</h2>
@@ -157,6 +186,11 @@
                             <span class="tag">19h as 23h</span>
                             <span class="tag">A la carte</span>
                             <span class="tag">Nota 4.9</span>
+                        </div>
+                        <div class="acoes-card">
+                            <button class="btn-comentarios" data-restaurante="bistro-central">Ver comentários</button>
+                            <button class="btn-detalhes" data-restaurante="bistro-central">Detalhes do prato</button>
+                            <a href="../fotos.html" class="btn-fotos">Ver fotos</a>
                         </div>
                     </div>
                 </article>
@@ -171,4 +205,5 @@
     <script src="../scripts/destaques.js"></script>
     <script src="../scripts/localStorage.js"></script>
 </body>
+
 </html>
