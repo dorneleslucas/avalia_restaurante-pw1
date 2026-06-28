@@ -46,40 +46,33 @@ function validarCampos () {
     const comentario = textereaComentario.value; 
     if(restaurante === '') { 
         alert('por favor, selecione um restaurante ') ; 
-        selectRestaurante.focus();  
         return false; 
     }
 
     if(cliente === '') { 
         alert('por favor,digite seu nome'); 
-        inputCliente.focus();  
         return false; 
     }
 
      if(feedback === '') { 
         alert('por favor, selecione uma nota para o seu feedback '); 
-        selectFeedback.focus();  
         return false; 
     }
      if(atendimento === '') { 
         alert('por favor, selecione uma nota para atendimento'); 
-        selectAtendimento.focus();  
         return false; 
     }
      if(custo === '') { 
         alert('por favor, selecione uma nota para custo'); 
-        selectCusto.focus();  
         return false; 
     }
      if(qualidade === '') { 
         alert('por favor, selecione uma nota para a qualidade da comida'); 
-        selectQualidade.focus();  
         return false; 
     }
 
     if(comentario === '') {
         alert('por favor, coloque um comentario para o restaurante'); 
-        textereaComentario.focus();  
         return false; 
     }
     

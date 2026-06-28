@@ -59,13 +59,20 @@ if(valorAplicado && tipoAplicado && statusAplicado) {
 });
    
  }
-// Quando clicar em "Ver fotos", salva o ID no localStorage e redireciona
+
 document.querySelectorAll('.btn-fotos').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault(); // impede o redirecionamento imediato
-        const id = this.dataset.restaurante;
-        localStorage.setItem('restauranteFotos', id); // salva no localStorage
-        window.location.href = this.href; // agora redireciona
+        e.preventDefault();
+        const card = this.closest('.restaurante');
+        const id = card ? card.dataset.id : null;
+        if (id) {
+            localStorage.setItem('restauranteFotos', id);
+            // verificação imediata
+            console.log('Salvou:', localStorage.getItem('restauranteFotos'));
+            window.location.href = this.href;
+        } else {
+            alert('Erro: restaurante não identificado.');
+        }
     });
 });
 
